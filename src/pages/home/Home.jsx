@@ -1,0 +1,24 @@
+/** @format */
+
+import React from "react";
+import HeroSection from "../../Components/slider/HeroSection";
+import About from "./About";
+import ChooseUs from "./ChooseUs";
+import Customar from "./Customar";
+import Services from "./Services";
+import Teachers from "./Teachers";
+
+const Home = () => {
+  return (
+    <div>
+      <HeroSection />
+      <Services />
+      <About />
+      <ChooseUs />
+      <Teachers />
+      <Customar />
+    </div>
+  );
+};
+
+export default Home;
