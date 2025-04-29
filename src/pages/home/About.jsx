@@ -5,15 +5,15 @@ import aboutImg from "../../assets/images//about-img.png";
 const About = () => {
   return (
     <section
-      className="py-16 text-white about_section"
+      className="py-20 text-white about_section"
       id="#about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             About <span className="text-[#00bbf0]">Us</span>
           </h2>
-          <p className="mt-4 text-white max-w-2xl mx-auto">
+          <p className="mt-2 text-white max-w-2xl mx-auto">
             Magni quod blanditiis non minus sed aut voluptatum illum quisquam
             aspernatur ullam vel beatae rerum ipsum voluptatibus
           </p>

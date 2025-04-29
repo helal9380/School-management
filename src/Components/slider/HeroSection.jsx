@@ -36,8 +36,8 @@ const HeroSection = () => {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <div className="container ">
-                    <div className="row flex justify-between items-center px-20">
-                      <div className="detail-box text-start w-1/2">
+                    <div className="row md:flex justify-between items-center px-20">
+                      <div className="detail-box text-start md:w-1/2">
                         <h1>
                           Crypto <br /> Currency
                         </h1>

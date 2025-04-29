@@ -6,8 +6,8 @@ const Navbar = () => {
   const navItems = [
     { name: "HOME", path: "/" },
     { name: "ABOUT", path: "/about" },
-    { name: "DIVISION", path: "/division" },
-    { name: "TEACHERS", path: "/teacher" },
+    { name: "SERVICE", path: "/service" },
+    { name: "TEACHERS", path: "/teachers" },
     { name: "LOGIN", path: "/login" },
     { name: "STUDENTS", path: "/students" },
   ];
@@ -41,7 +41,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex">
-            <div className="lg:hidden">
+            <div className="lg:hidden w-full">
               <div className="dropdown dropdown-end">
                 <label
                   tabIndex={0}
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 z-50">
+                  className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-[#00bbf0] rounded-box w-52 z-50">
                   {links}
                 </ul>
               </div>

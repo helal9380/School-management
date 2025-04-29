@@ -30,7 +30,7 @@ const teamMembers = [
 
 const Teachers = () => {
   return (
-    <section className="team_section py-16">
+    <section className="bg-[#00bbf0] py-16">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <div className="text-center text-white mb-12">

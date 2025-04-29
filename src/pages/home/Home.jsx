@@ -2,7 +2,6 @@
 
 import React from "react";
 import HeroSection from "../../Components/slider/HeroSection";
-import About from "./About";
 import ChooseUs from "./ChooseUs";
 import Customar from "./Customar";
 import Services from "./Services";
@@ -13,7 +12,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <Services />
-      <About />
+
       <ChooseUs />
       <Teachers />
       <Customar />
