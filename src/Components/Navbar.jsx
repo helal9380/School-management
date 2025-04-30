@@ -5,11 +5,11 @@ import "./slider/slide.css";
 const Navbar = () => {
   const navItems = [
     { name: "HOME", path: "/" },
-    { name: "ABOUT", path: "/about" },
-    { name: "SERVICE", path: "/service" },
     { name: "TEACHERS", path: "/teachers" },
+    { name: "STUDENTS", path: "/dashboard/students" },
+    { name: "DIVISION", path: "/service" },
+    { name: "ABOUT", path: "/about" },
     { name: "LOGIN", path: "/login" },
-    { name: "STUDENTS", path: "/students" },
   ];
 
   const links = navItems.map((item) => (
@@ -72,21 +72,6 @@ const Navbar = () => {
             <div className="hidden lg:flex">
               <ul className="flex space-x-4 items-center">{links}</ul>
             </div>
-
-            {/* Navbar End */}
-            <li className="list-none">
-              <NavLink
-                to={"/login"}
-                className={({ isActive }) =>
-                  `px-3 py-2 transition-colors duration-300 ${
-                    isActive
-                      ? "text-[#00bbf0]"
-                      : "text-white hover:text-[#00bbf0]"
-                  }`
-                }>
-                LOGIN
-              </NavLink>
-            </li>
           </div>
         </div>
       </div>

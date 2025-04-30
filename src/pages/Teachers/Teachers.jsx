@@ -1,39 +1,17 @@
 /** @format */
 
-import React from "react";
-
-const teachers = [
-  {
-    id: 1,
-    name: "Mr. Rafiq Ahmed",
-    subject: "Mathematics",
-    photo: "https://i.ibb.co/9nN6Bvz/teacher1.jpg",
-    email: "rafiq.ahmed@example.com",
-  },
-  {
-    id: 2,
-    name: "Ms. Ayesha Karim",
-    subject: "English",
-    photo: "https://i.ibb.co/7J8wBKH/teacher2.jpg",
-    email: "ayesha.karim@example.com",
-  },
-  {
-    id: 3,
-    name: "Mr. Saiful Islam",
-    subject: "Science",
-    photo: "https://i.ibb.co/qJgDfFf/teacher3.jpg",
-    email: "saiful.islam@example.com",
-  },
-];
+import { useState } from "react";
+import { allTeachers } from "../../utils/feeData";
 
 const Teachers = () => {
+  const [teachers, setTeachers] = useState(allTeachers);
   return (
     <section className="py-16 about_section text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-1">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Meet Our <span className="text-[#00bbf0]">Teachers</span>
+            Meet Our<span className="text-[#00bbf0]">Teacher</span>
           </h2>
           <p className="mt-4 max-w-xl mx-auto">
             Our experienced and passionate teachers are here to guide every
@@ -46,7 +24,7 @@ const Teachers = () => {
           {teachers.map((teacher) => (
             <div
               key={teacher.id}
-              className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+              className="bg-[#00212a] p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
               <img
                 src={teacher.photo}
                 alt={teacher.name}

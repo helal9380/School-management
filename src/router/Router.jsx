@@ -1,7 +1,12 @@
 /** @format */
 
 import { createBrowserRouter } from "react-router-dom";
+import Dashboard from "../layout/Dashboard";
 import Layout from "../layout/Layout";
+import FeeManagement from "../pages/Dashbaord/FeeManagement";
+import ManageTeachers from "../pages/Dashbaord/ManageTeacher/ManageTeachers";
+import Overview from "../pages/Dashbaord/OverView/OverView";
+import Settings from "../pages/Dashbaord/Setting/Settings";
 import About from "../pages/home/About";
 import Home from "../pages/home/Home";
 import Services from "../pages/home/Services";
@@ -30,10 +35,10 @@ const Router = createBrowserRouter([
         path: "/teachers",
         element: <Teachers />,
       },
-      {
-        path: "/students",
-        element: <Students />,
-      },
+      // {
+      //   path: "/students",
+      //   element: <Students />,
+      // },
       {
         path: "/login",
         element: <Login />,
@@ -41,6 +46,32 @@ const Router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "students",
+        element: <Students />,
+      },
+      {
+        path: "fees",
+        element: <FeeManagement />,
+      },
+      {
+        path: "teachers",
+        element: <ManageTeachers />,
+      },
+      {
+        path: "overview",
+        element: <Overview />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
       },
     ],
   },

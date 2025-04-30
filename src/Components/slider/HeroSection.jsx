@@ -26,7 +26,7 @@ const HeroSection = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper ">
+        className="mySwiper">
         <SwiperSlide>
           <section className="slider_section ">
             <div
